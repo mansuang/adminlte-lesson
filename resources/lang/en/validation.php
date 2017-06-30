@@ -103,8 +103,9 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
-    ],
 
+    ],
+    'old_password' => ':attribute not correct',
     /*
     |--------------------------------------------------------------------------
     | Custom Validation Attributes
