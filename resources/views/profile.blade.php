@@ -2,10 +2,13 @@
 
 @section('content')
 
+
+
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
         User Information
+
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -37,7 +40,7 @@
               <div class="box-body">
               	<div class="col-md-6">
 	                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-	                  <label for="name">ชื่อ</label>
+	                  <label for="name">@lang('profile.name')</label>
 	                  <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" value="{{ auth()->user()->name }}">
 				        @if ($errors->has('name'))
 				            <span class="help-block">
@@ -46,7 +49,7 @@
 				        @endif   	                  
 	                </div>
 	                <div class="form-group{{ $errors->has('old_password') ? ' has-error' : '' }}">
-	                  <label for="oldPassword">รหัสผ่านเดิม</label>
+	                  <label for="oldPassword">@lang('profile.oldpassword')</label>
 	                  <input type="password" class="form-control" id="oldPassword" placeholder="Old Password" name="old_password">
 				        @if ($errors->has('old_password'))
 				            <span class="help-block">
@@ -55,7 +58,7 @@
 				        @endif   		                  
 	                </div>
 	                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-	                  <label for="newPassword">รหัสผ่านใหม่</label>
+	                  <label for="newPassword">@lang('profile.newpassword')</label>
 	                  <input type="password" class="form-control" id="newPassword" placeholder="New Password" name="password">
 				        @if ($errors->has('password'))
 				            <span class="help-block">
@@ -64,7 +67,7 @@
 				        @endif   		                  
 	                </div>
 	                <div class="form-group">
-	                  <label for="password_confirmation">ยืนยันรหัสผ่านใหม่</label>
+	                  <label for="password_confirmation">@lang('profile.confirmpassword')</label>
 	                  <input type="password" class="form-control" id="password_confirmation" placeholder="Retype Password" name="password_confirmation">
 	                </div>
 	              </div>
