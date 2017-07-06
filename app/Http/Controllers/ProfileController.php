@@ -3,16 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App;
 
 class ProfileController extends Controller
 {
+
+	public function __construct() {
+		
+	}
+
+
 	public function index()
-	{
+	{		
 		return view('profile');
 	}    
 
 	public function update()
 	{
+
 		$this->validate( request(), [
             'name' => 'required|string|max:255|min:3',
             'old_password' => 'required|old_password',

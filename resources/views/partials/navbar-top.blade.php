@@ -123,7 +123,7 @@
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
       <i class="fa fa-flag-o"></i>
       <span class="label label-danger">9</span>
-    </a>
+    </a>  
     <ul class="dropdown-menu">
       <li class="header">You have 9 tasks</li>
       <li>
@@ -192,6 +192,18 @@
       </li>
     </ul>
   </li>
+
+  <li class="dropdown tasks-menu">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-language"></i>
+    </a>  
+    <ul class="dropdown-menu">
+      <li class="header"><a href="/lang/en">English</a></li>
+      <li class="header"><a href="/lang/th">ภาษาไทย</a></li>
+
+    </ul>
+  </li>
+
   <!-- User Account: style can be found in dropdown.less -->
   <li class="dropdown user user-menu">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
